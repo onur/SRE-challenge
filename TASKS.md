@@ -45,11 +45,44 @@ attack. In order to determine if it's a DDoS attack, I'd check:
 
 # Issue 2
 
-As a SRE, my job is to make sure all services are running. I'd start with
-trying to reproduce the issue and make sure backup micro-services are working
-by checking logs. If it's a server related issue, I would take action
-immediately to solve problem, and bring back services to healthy state.
+## Step 1: Evaluation of the severity of the incident
 
-If it's a software issue I'd create a ticket with **critical** severity, since
-clients are getting affected directly by this important feature, and provide
-logs in my ticket to help developers to understand issue.
+The first step in handling the incident is to assess its severity. Since the
+backup creation feature in the dashboard app is not working, it can lead to
+data loss and affect the customer's ability to access their data. Therefore,
+this incident is considered a high-priority incident that requires immediate
+attention.
+
+## Step 2: Incident handling and escalation process
+
+The incident handling and escalation process should be followed to ensure that
+the incident is resolved as quickly as possible. Here is the process that I
+would follow:
+
+1. Gather information: I would ask the first line of customer support to
+    provide me with more information about the incident, such as the error
+    message received by the customer, the impact of the incident on the customer,
+    and any troubleshooting steps they have taken so far.
+2. Escalation: Depending on the severity of the incident, I would escalate it
+    to the appropriate level. Since this is a high-priority incident, I would
+    escalate it to the second line of support, who have more expertise and
+    experience with the dashboard app.
+3. Investigation: The second line of support would investigate the issue
+    further by reviewing the logs, error messages, and any other relevant
+    information to identify the root cause of the issue.
+4. Communication: Throughout the process, it is important to keep the customer
+    informed about the status of the incident. I would provide regular updates
+    to the customer via email or phone to let them know that the incident is being
+    investigated and that we are working on a resolution.
+5. Resolution: Once the root cause of the issue is identified, the second line
+    of support would work on resolving the issue. If necessary, they would work
+    with the development team to develop a fix for the issue.
+6. Testing: Once the issue has been resolved, the second line of support would
+    test the backup creation feature to ensure that it is working as expected.
+7. Follow-up: After the incident has been resolved, I would follow up with the
+    customer to ensure that they are satisfied with the resolution and that the
+    backup creation feature is working as expected.
+
+Overall, the incident handling and escalation process should be followed
+carefully to ensure that the incident is resolved quickly and effectively, and
+the customer is satisfied with the outcome.
